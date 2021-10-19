@@ -1,0 +1,111 @@
+/* reset browser styles */
+body, ul, ol, li {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+   /* border: 1px solid blue; */
+   background-color: #EEECE3;
+   font-family: 'Roboto Mono', monospace;
+   text-align: center;
+   color: #43362e;
+}
+
+.calculator {
+   /* border: 1px solid orange; */
+   display: inline-block;
+   aspect-ratio: 0.888;
+   max-width: 500px;
+   margin-top: 15vh;
+   padding: 0.7%;
+}
+
+.screen {
+   border: 1px solid #43362e;
+   border-radius: 6px;
+   padding: 0 5% 0 5%;
+   font-size: calc(1.5em + 1vmin);
+   margin: 0.5%;
+   margin-bottom: 0.7%;
+   color: #43362e;
+   height: 27%;
+   /* Prevents stuff from 
+   overflowing form the screen */
+   overflow: auto;
+}
+
+.screen .expression {
+   /* border: 1px solid magenta; */
+   margin-top: 4%;
+   text-align: left;
+   margin-bottom: 5%;
+}
+
+.screen .answer {
+   /* border: 1px solid magenta; */
+   text-align: right;
+   margin-top: 4%;
+   font-weight: bold;
+}
+
+.buttons { 
+   /* border: 1px solid black; */
+   aspect-ratio: 1.25589;
+}
+
+.buttons button:hover {
+   border: 2px solid #6b584d;
+}
+
+.buttons button:active {
+   border: 3px solid #6b584d;
+   border-radius: 8px;
+}
+
+.buttons button {
+   border: 1px solid #43362e;
+   float: left;
+   background-color: transparent;
+   border-radius: 6px;
+   aspect-ratio: 1;   /* Aspect ratio is experimental */
+   min-width: 18.6%;
+   margin: .7%;
+   font-family: 'Roboto Mono', monospace;
+   color: #43362e;
+   font-size: calc(2em + 1vmin);
+}
+
+.buttons .delete{
+   background-color: #DFC2C0;
+   font-size: calc(1.0em + 1vmin);
+}
+.buttons .equals {
+   background-color: #ECD5B3;
+   width: 38.5%;
+   aspect-ratio: 2;
+}
+
+.buttons .zero {
+   width: 38.5%;
+   aspect-ratio: 2;
+}
+
+
+.content {
+   /* border: 1px dotted green; */
+   border-top: 1px dashed #43362e;
+   /* position: absolute; */
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   margin-top: 30vh;
+   padding: 10vw;
+   /* text-align: center; */
+}
+.content p {
+   /* border: 1px solid green; */
+   text-align: left;
+   padding-left: 10vw;
+   padding-right: 10vw;
+   padding-top: 1vh;
+   /* max-width: 500px; */
+}
